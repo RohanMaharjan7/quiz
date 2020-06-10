@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    tools:context=".form_activity.IrrigationActivity">
+
+    <ScrollView
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/pristha"
+        android:id="@+id/scrollview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/app_bar_design">
+
+                    <RelativeLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toLeftOf="@+id/ig_card"
+                            android:orientation="vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="20sp"
+                                android:text="Sichai"
+                                android:textStyle="bold"
+                                android:textAllCaps="true"
+                                android:padding="10dp"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textSize="20sp"
+                                android:text="Dharma Raj Gurung"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@android:color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ig_card"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="50dp"
+                            app:cardBackgroundColor="@color/body_color"
+                            app:cardElevation="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:padding="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/circle_img"
+                                android:src="@drawable/ic_baseline_home_24"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:text="Thursday, 11:00 am"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="Feb 20, 2020"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:background="@drawable/ward_bck"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp">
+
+                            <TextView
+                                android:layout_marginLeft="30dp"
+                                android:id="@+id/ward"
+                                android:layout_centerVertical="true"
+                                android:textSize="20dp"
+                                android:text="Ward No. : "
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_marginLeft="25dp"
+                                android:layout_toRightOf="@+id/ward"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@android:color/white"
+                                    android:text="20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="50dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/body_color"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-90dp">
+
+                <LinearLayout
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:layout_marginTop="100dp"
+                        android:text="Jamma Sichai Hune Jamin (Hectar)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <EditText
+                            android:inputType="number"
+                            android:background="@drawable/edit_bck"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Jamma Sichai Bhayeko Jamin (Hectar)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <EditText
+                            android:inputType="number"
+                            android:background="@drawable/edit_bck"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:text="Project Ko Naam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <EditText
+                            android:inputType="textAutoComplete"
+                            android:background="@drawable/edit_bck"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Aayojana Sanchalit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Sangh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <Switch
+                                android:layout_marginStart="5dp"
+                                app:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Kendra"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <Switch
+                                android:layout_marginStart="5dp"
+                                app:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Anya"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <Switch
+                                android:layout_marginStart="5dp"
+                                app:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Aayojanako Awastha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Sampanna"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <Switch
+                                android:layout_marginStart="5dp"
+                                app:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Chaalu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <Switch
+                                android:layout_marginStart="5dp"
+                                app:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Sano Marmat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <Switch
+                                android:layout_marginStart="5dp"
+                                app:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_alignParentLeft="true"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:text="Thulo Marmat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </TextView>
+
+                            <Switch
+                                android:layout_marginStart="5dp"
+                                app:buttonTint="@color/colorPrimary"
+                                android:checked="false"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:onClick="savegarnus"
+                            android:textStyle="normal"
+                            android:textSize="18sp"
+                            android:background="@drawable/ward_bck"
+                            android:textColor="@color/white"
+                            android:text="Save"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/pristha"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:paddingLeft="20dp"
+            android:drawablePadding="-20dp"
+            android:drawableStart="@drawable/ic_baseline_home_24"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:background="@drawable/ward_bck"
+            android:textColor="@color/white"
+            android:text="Griha Pristhi"
+            android:layout_width="200dp"
+            android:layout_height="35dp"/>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
